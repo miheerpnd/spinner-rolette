@@ -22,11 +22,7 @@ function RGB2Color(r,g,b) {
 }
 
 function getColor(item) {
-  if(item%2 == 0){
-    return "#b40e0e";
-  }else{
-    return "#1B0606";
-  }
+  return item % 2 === 0 ? "#b40e0e" : "#1B0606";
 }
 
 function drawRouletteWheel() {
@@ -39,7 +35,7 @@ function drawRouletteWheel() {
     var insideRadius = 100;
 
     ctx = canvas.getContext("2d");
-    ctx.clearRect(0,0,500,500);
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
 
     ctx.strokeStyle = "black";
     ctx.lineWidth = 2;
