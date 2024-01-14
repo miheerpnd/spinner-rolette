@@ -1,4 +1,4 @@
-var options = ["0","1","2","3","4","5","6","7","8","8","10","11","12","13","14","15","16","17","18","00","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"];
+var options = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","00","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -34,9 +34,9 @@ function drawRouletteWheel() {
   var canvas = document.getElementById("canvas");
   
   if (canvas.getContext) {
-    var outsideRadius = 200;
-    var textRadius = 160;
-    var insideRadius = 130;
+    var outsideRadius = 150;
+    var textRadius = 120;
+    var insideRadius = 100;
 
     ctx = canvas.getContext("2d");
     ctx.clearRect(0,0,500,500);
@@ -44,7 +44,7 @@ function drawRouletteWheel() {
     ctx.strokeStyle = "black";
     ctx.lineWidth = 2;
 
-    ctx.font = 'bold 12px Helvetica, Arial';
+    ctx.font = 'bold 10px Helvetica, Arial';
 
     for(var i = 0; i < options.length; i++) {
       var angle = startAngle + i * arc;
@@ -78,7 +78,7 @@ function drawRouletteWheel() {
     //Arrow
     ctx.fillStyle = "white";
     ctx.beginPath();
-    ctx.arc(260, 260 - outsideRadius + 5, 12, 0, 2 * Math.PI); // Draws a circle
+    ctx.arc(260, 260 - outsideRadius + 5, 8, 0, 2 * Math.PI); // Draws a circle
     ctx.fill();
   }
 }
