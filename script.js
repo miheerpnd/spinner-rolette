@@ -35,7 +35,7 @@ function drawRouletteWheel() {
     var insideRadius = 100;
 
     ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0,0,500,500);
 
     ctx.strokeStyle = "black";
     ctx.lineWidth = 2;
