@@ -1,0 +1,79 @@
+.casino-table{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    /* border: rgb(112, 5, 5) solid 20px; */
+    /* border-radius: 12px; */
+    background-color: rgb(7, 151, 7);
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: inset rgb(24, 23, 23) 0px 0px 150px -12px; 
+    overflow: hidden;
+}
+
+.rollet-div{
+    width: 500px;
+    height: 500px;
+    min-width: 550px;
+    min-height: 550px;
+    /* background-color: rgb(83, 5, 5); */
+    background-color: rgb(83, 5, 5);
+    border: rgb(54, 3, 3) solid 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(59, 8, 8);
+    box-shadow: 0 50px 50px -50px rgb(240, 230, 230);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rollet-roller{
+    width: 500px;
+    height: 500px;
+    background-color: wheat;
+    background-color: #690707;
+    /* border: rgb(112, 5, 5) solid 15px; */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 50px 50px -60px rgb(0, 0, 0);
+    box-shadow: inset rgb(24, 23, 23) 0px 0px 60px -12px; 
+    rotate: 60deg;
+}
+
+.ball{
+    width: 258px;
+    height: 258px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: inset rgb(24, 23, 23) 0px 0px 120px -12px; 
+    background-color: #690707;
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+
+
+/* .dot{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+} */
+
+.game-propt{
+    width: 100%;
+    height: 100%;
+}
